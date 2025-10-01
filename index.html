@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-color: #141414;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .MYTHICA {
+            perspective: 700px;
+            font-family: "Alfa Slab One", serif;
+        }
+
+        .MYTHICA>span {
+            font-size: 130px;
+            display: inline-block;
+            animation: MYTHICA 2.6s infinite linear;
+            transform-origin: 0 70%;
+            transform-style: preserve-3d;
+            color: #29ed2d;
+        }
+
+        @keyframes MYTHICA {
+            35% {
+                transform: rotateX(360deg);
+            }
+
+            100% {
+                transform: rotatex(360deg);
+            }
+        }
+
+        .MYTHICA>span:nth-child(even) {
+            color: rgb(248, 9, 240);
+
+        }
+
+        .MYTHICA>span:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .MYTHICA>span:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .MYTHICA>span:nth-child(4) {
+            animation-delay: 0.9s;
+        }
+
+        .MYTHICA>span:nth-child(5) {
+            animation-delay: 1.2s;
+        }
+
+        .MYTHICA>span:nth-child(6) {
+            animation-delay: 1.5s
+        }
+
+        .MYTHICA>span:nth-child(7) {
+            animation-delay: 1.8s
+        }
+    </style>
+</head>
+
+<body>
+    <div class="MYTHICA">
+        <span>M</span>
+        <span>Y</span>
+        <span>T</span>
+        <span>H</span>
+        <span>I</span>
+        <span>C</span>
+        <span>A</span>
+    </div>
+</body>
+
+</html>
